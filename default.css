@@ -4,9 +4,13 @@
 
     --borderColor:#c1c1c1;
 
-    --mainText:red;
+    --mainText:black;
     --secondaryText:#4b5156;
 }
+
+/*font-family: 'Fredericka the Great', cursive;*/
+/*font-family: 'Gruppo', cursive;*/
+/*font-family: 'Lekton', sans-serif;*/
 
 html body{
     padding: 0;
@@ -15,6 +19,7 @@ html body{
 
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
+    font-family: 'Fredericka the Great', cursive;
 }
 
 a{
@@ -35,6 +40,7 @@ h6{font-size:16px ;}
 
 p, li, span, label, input, textarea{
     color: var(--secondaryText);
+    font-family: 'Lekton', sans-serif;
 }
 
 .section-one{
@@ -53,6 +59,40 @@ p, li, span, label, input, textarea{
     width: 1200px;
     margin: 0 auto;
 }
+
+.greeting-wrapper{
+    display: grid;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+    text-align: center;
+    align-content: center;
+}
+
+.intro-wrapper{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: 18px 18px 5px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 18px 18px 5px -15px rgba(0,0,0,0.75);
+    box-shadow: 18px 18px 5px -15px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-wrapper{
+    grid-area: nav-wrapper;
+    border: 1px dashed lightcoral;
+}
+
+.left-column{
+    grid-area: left-column;
+    border: 1px dashed lightcoral;
+}
+
+.right-column{
+    grid-area: right-column;
+    border: 1px dashed lightcoral;
+}
+
 
 @media screen and (max-width: 1200px) {
     .main-container{
