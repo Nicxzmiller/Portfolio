@@ -249,6 +249,19 @@ p, li, span, label, input, textarea{
     left: -5px;
 }
 
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
 
 @media screen and (max-width: 1200px) {
     .main-container{
