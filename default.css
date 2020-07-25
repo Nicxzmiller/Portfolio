@@ -12,7 +12,6 @@
     --previewBg: rgba(251, 249, 243, 0.8);
     --previewShadow: #f0ead6 ;
     --btnColor:#000000;
-;
 }
 
 /*font-family: 'Fredericka the Great', cursive;*/
@@ -98,6 +97,15 @@ p, li, span, label, input, textarea{
     align-items: center;
     background-color: var(--mainColor);
     border-radius: 10px 10px 0 0;
+}
+
+.nav-post-wrapper{
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
 }
 
 #navigation{
